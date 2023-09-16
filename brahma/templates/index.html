@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>BRAHMA Quiz Fest</title>
+</head>
+<body>
+    <header>
+        <h1>BRAHMA Quiz Fest</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to BRAHMA Quiz Fest</h2>
+        <p>Join us for the grandest quiz fest in Coimbatore!</p>
+        <a href="{{ url_for('registration_form') }}" class="register-button">Register for General Quiz (Open)</a>
+        <a href="{{ url_for('school_registration_form') }}" class="register-button">Register for General Quiz (School)</a>
+        <a href="{{ url_for('cricket_registration_form') }}" class="register-button">Register for Cricket Quiz (Open)</a>
+    </section>
+
+    <section id="about">
+        <h2>About BRAHMA Quiz Fest</h2>
+        <p>The students of Quiz Club of CIT conduct BRAHMA - a quiz fest. BRAHMA is considered to be one of the grandest quiz fests in Coimbatore for the past 15 years.</p>
+        <p>Event Chairman: QM J S Rohit</p>
+        <p>Event Financial Chairman: QMV P Amithashri</p>
+        <p>Event Secretary: QM K Sanjith Sivendra</p>
+        <p>Developed By:QM R V Hareesh</p>
+        <p>Instagram: <a href="https://instagram.com/citquizclub?igshid=MzRlODBiNWFlZA==">#citquizclub</a></p>
+        <p>Date: October 15</p>
+        <p>Venue: CIT</p>
+        <p>Contact Details: +91 93459 95957</p>
+        <p>Entry Fees: Open category - 50 rupees, School category - No entry fee.</p>
+        <p>Registration open now. Hurry to join BRAHMA - 2023; a quiz fest on 15/08/2023 in CIT college auditorium for School, College, and Open categories.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BRAHMA Quiz Fest</p>
+    </footer>
+</body>
+</html>
